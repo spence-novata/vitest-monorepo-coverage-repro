@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "jsx": "react",
+    "moduleResolution": "Node16",
+    "pretty": true,
+    "target": "es2021"
+  },
+  "extends": "@tsconfig/recommended/tsconfig.json",
+  "ts-node": { "swc": true }
+}

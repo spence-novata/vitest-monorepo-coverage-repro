@@ -1,0 +1,23 @@
+{
+  "name": "@demo/config",
+  "version": "1.0.0",
+  "description": "Global config package to make retrieving configuration across services trivial.",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./client": "./dist/client.js"
+  },
+  "scripts": {
+    "lint": "eslint ./",
+    "test": "vitest",
+    "typecheck": "tsc --noEmit"
+  },
+  "license": "UNLICENSED",
+  "dependencies": {},
+  "devDependencies": {
+    "@swc/cli": "^0.3.12",
+    "jest-extended": "^4.0.2",
+    "ts-node": "^10.9.2",
+    "vitest": "^1.6.0"
+  }
+}

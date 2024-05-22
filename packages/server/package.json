@@ -1,0 +1,31 @@
+{
+  "name": "@demo/a",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/app.ts",
+  "type": "module",
+  "scripts": {
+    "build": "swc ./src --out-dir dist --strip-leading-paths",
+    "start": "node --experimental-specifier-resolution=node dist/index.js",
+    "dev": "nodemon",
+    "test": "vitest",
+    "coverage": "vitest run --coverage",
+    "typecheck": "tsc-absolute --noEmit"
+  },
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@demo/config": "*",
+    "express": "^4.19.2",
+    "helmet": "^7.1.0"
+  },
+  "devDependencies": {
+    "@swc/cli": "^0.3.12",
+    "@swc/core": "^1.5.7",
+    "@types/glob": "^8.1.0",
+    "glob": "^10.3.15",
+    "jest-extended": "^4.0.2",
+    "nodemon": "^3.1.0",
+    "supertest": "^7.0.0",
+    "vitest": "^1.6.0"
+  }
+}
